@@ -1,5 +1,6 @@
 <template>
-  <section class="container">
+  <section>
+    <Header/>
     <div>
       <logo />
       <nuxt-link to="/contact">
@@ -10,24 +11,17 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue';
+import Header from '~/components/Header.vue';
 
 export default {
   components: {
-    Logo
+    Header
   }
 }
 </script>
 
 <style>
 
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
 .title {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
